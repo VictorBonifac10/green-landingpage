@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-.content-header{
+.content-header {
     margin: 30px 0px 10px 30px;
 }
 
-.link{
+.link {
     color: #17233D;
     text-decoration: none;
 
     font-size: 14px;
-    font-weight: 400;   
+    font-weight: 400;
 
     padding: 15px;
 
@@ -24,101 +24,100 @@
     transition: 0.3s;
 }
 
-.link:hover{
+.link:hover {
     color: #000000;
 }
 
 
-.button-header{
+.button-header {
     width: 90px;
     height: 35px;
 
     border-radius: 5px;
     border: none;
- 
+
     color: #fff;
     background: #6FBF44;
     transition: 0.2s;
     cursor: pointer;
 }
 
-.button-header:hover{
+.button-header:hover {
     background: black;
     color: #fff;
 }
 
-.principal-content{
-    margin: 10px;
-    padding: 10px;
+.principal-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 50px;
 }
 
-.img-content{
-    height: 500px;
-    width: 500px;
+.img-content {
+    height: 400px;
+    width: 400px;
 
-    display:flex;
+    display: flex;
     vertical-align: middle;
-
-    padding: 15px;
-
 }
 
-.content-2{
+.content-2 {
     width: 500px;
-    margin-left: 40px;
-    margin-top: 100px;
 }
 
-.title{
+.title {
     color: #17233D;
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.text-content{
+.text-content {
     color: #8e948a;
     margin-bottom: 15px;
 }
 
-.learn-more{
+.learn-more {
     color: #6FBF44;
     transition: 0.3s;
 
     text-decoration: none;
 }
 
-.learn-more:hover{
+.learn-more:hover {
     color: black;
 }
 
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 880px) {
 
-    .link{
+    .link {
         display: none;
     }
 
-    .button-header{
-        margin-left: 380px;
-        margin-bottom: 70px;
+    .button-header {
+        display: block;
+        margin: 0 auto;
     }
 
-    .principal-content{
+    .principal-content {
         display: block;
     }
 
-    .content-2{
+    .content-2 {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
 
-    .img-content{
+    .img-content {
         position: absolute;
-        top: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 100px;
     }
 
 }
-
